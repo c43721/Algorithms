@@ -1,4 +1,3 @@
-
 def quicksort(items):
     """Quick sort in Python
 
