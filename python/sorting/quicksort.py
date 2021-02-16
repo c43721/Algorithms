@@ -17,7 +17,7 @@ def quick_sort(items):
     low = [low for low in items if low < pivot]
     high = [high for high in items if high >= pivot]
 
-    return quicquick_sortsort(low) + [pivot] + quick_sort(high)
+    return quick_sort(low) + [pivot] + quick_sort(high)
 
 if __name__ == "__main__":
     import doctest
