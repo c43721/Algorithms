@@ -1,13 +1,13 @@
-def quicksort(items):
+def quick_sort(items):
     """Quick sort in Python
 
-    >>> quicksort([])
+    >>> quick_sort([])
     []
 
-    >>> quicksort([2,1])
+    >>> quick_sort([2,1])
     [1, 2]
 
-    >>> quicksort([6,1,4,2,3,5])
+    >>> quick_sort([6,1,4,2,3,5])
     [1, 2, 3, 4, 5, 6]
     """
     if len(items) <= 1:
@@ -17,7 +17,7 @@ def quicksort(items):
     low = [low for low in items if low < pivot]
     high = [high for high in items if high >= pivot]
 
-    return quicksort(low) + [pivot] + quicksort(high)
+    return quicquick_sortsort(low) + [pivot] + quick_sort(high)
 
 if __name__ == "__main__":
     import doctest
