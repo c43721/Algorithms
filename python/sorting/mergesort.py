@@ -1,4 +1,18 @@
 def merge_sort(items):
+    """Merge sort in Python
+
+    >>> merge_sort([])
+    []
+
+    >>> merge_sort([1])
+    [1]
+
+    >>> merge_sort([2,1])
+    [1, 2]
+
+    >>> merge_sort([6,1,4,2,3,5])
+    [1, 2, 3, 4, 5, 6]
+    """
     # Base case
     if len(items) <= 1:
         return items
@@ -36,7 +50,6 @@ def merge_sort(items):
 
     return items
 if __name__ == "__main__":
-    # print(merge([1,5,3,4,2]))
-    print(merge_sort([1,5,3,4,2,6,9,8,7,10]))
-    print(merge_sort([3,2,1]))
-    # assert merge([1,5,3,4,2]) == [1, 2, 3, 4, 5]
+    import doctest
+
+    doctest.testmod()
