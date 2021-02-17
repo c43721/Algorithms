@@ -13,7 +13,7 @@ def quick_sort(items):
     if len(items) <= 1:
         return items
 
-    pivot = items.pop();
+    pivot = items.pop()
     low = [low for low in items if low < pivot]
     high = [high for high in items if high >= pivot]
 

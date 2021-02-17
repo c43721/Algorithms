@@ -1,7 +1,10 @@
 from random import randrange
 from datetime import datetime
+
+# Algos
 from mergesort import merge_sort
 from quicksort import quick_sort
+from bogosort import bogo_sort
 
 if __name__ == "__main__":
     sorting_algos = {
