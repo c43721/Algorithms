@@ -5,6 +5,7 @@ from datetime import datetime
 from mergesort import merge_sort
 from quicksort import quick_sort
 from bogosort import bogo_sort
+from bubblesort import bubble_sort
 
 if __name__ == "__main__":
     sorting_algos = {
@@ -14,6 +15,10 @@ if __name__ == "__main__":
         },
         "Quick Sort": {
             'algo': quick_sort,
+            'time': 0
+        },
+        "Bubble Sort": {
+            'algo': bubble_sort,
             'time': 0
         }
     }
